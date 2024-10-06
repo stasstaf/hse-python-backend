@@ -6,7 +6,6 @@ from typing import Optional, List, Any
 from hw2.models import ItemBase, ItemCreate, ItemUpdate, CartItem, Cart
 
 app = FastAPI()
-
 items = {}
 carts = {}
 item_id_counter = 1
