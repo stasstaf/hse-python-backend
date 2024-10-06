@@ -25,4 +25,4 @@ jobs:
       - name: Install dependencies with poetry
         run: poetry install
       - name: Run tests
-        run: poetry run pytest -vv --showlocals --strict ./tests/test_homework_2.py
+        run: poetry run pytest -vv --showlocals --strict ./tests
