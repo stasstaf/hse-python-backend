@@ -2,8 +2,6 @@
 pythonpath = [
   "."
 ]
-
-
 [tool.poetry]
 name = "hse-python-backend"
 version = "0.1.0"
