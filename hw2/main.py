@@ -4,8 +4,10 @@ from http import HTTPStatus
 
 from typing import Optional, List, Any
 from hw2.models import ItemBase, ItemCreate, ItemUpdate, CartItem, Cart
+from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI()
+Instrumentator().instrument(app).expose(app)
 
 items = {}
 carts = {}
